@@ -13,9 +13,11 @@ if ($conn->connect_error) {
     die("Koneksi ke database gagal: " . $conn->connect_error);
 }
 
-$nama = $_REQUEST['food'];
+$nama = $_REQUEST['name'];
+$username = $_REQUEST['username'];
+$pass = $_REQUEST['pass'];
 
-$sql = "INSERT INTO test1 (id, makanan) VALUES (' ', '$nama')";
+$sql = "INSERT INTO table1 (id, name, username, pass) VALUES (' ', '$nama','$username','$pass')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Data berhasil dimasukkan ke dalam database.";
@@ -25,3 +27,4 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
+<a href="data.html">Return?</a>

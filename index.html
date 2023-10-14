@@ -3,14 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Site</title>
 </head>
 <body>
-<marquee direction="right">Hello gays</marquee>
-<h1>Makanan</h1>
-<form action="koneksi.php" method="post">
-    <input type="text" name="food">
-    <input type="submit">
-</form>
+<div class="container">
+    <h1>Login</h1>
+    <form action="connect.php" method="post">
+    <div class="row">
+        <div class="col-25">
+            <label for="fname">Name</label>
+        </div>
+        <div class="col-75">
+            <input type="text" name="name" id="name" placeholder="Name">
+        </div>
+        <div class="col-25">
+            <label for="lname">UserName</label>
+        </div>
+        <div class="col-75">
+            <input type="text" name="username" id="username" placeholder="Username">
+        </div>
+        <div class="col-25">
+            <label for="pass">Password</label>
+        </div>
+        <div class="col-75">
+            <input type="text" name="pass" id="pass" placeholder="Password">
+            <input type="submit" value="R U Sure???">
+        </div>
+    </div>
+    </form>
+</div>
 </body>
+<style>
+    h1 {
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    input[type=submit] {
+        background-color: green;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 7.5px;
+        cursor: pointer;
+        float: right;
+    }
+    .container {
+        border-radius: 5px;
+        background-color: cyan;
+        padding: 20px;
+        margin: auto;
+        width: 30%;
+    }
+</style>
 </html>
