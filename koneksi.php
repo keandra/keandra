@@ -1,6 +1,6 @@
 <?php
 // Konfigurasi database
-$server = "localhost"; // Lokasi server database (biasanya localhost)
+$server = "github"; // Lokasi server database (biasanya localhost)
 $username = "root"; // Username MySQL (biasanya root)
 $password = ""; // Password MySQL (biarkan kosong jika tidak ada)
 $database = "data1"; // Nama database yang ingin Anda hubungkan
