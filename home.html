@@ -1,62 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Halaman Dua Div</title>
+    <style>
+        div {
+            background-color: cyan;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+        #left-div {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #right-div {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 50%;
+            height: auto;
+        }
+        h1, p {
+            color: #fff;
+        }
+        button {
+            background-color: #27ae60; /* Ganti warna tombol di sini */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        }
+
+        li {
+        float: left;
+        }
+
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: #111;
+        }
+
+        .active {
+        background-color: #04AA6D;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="home.html" class="active">Home</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="project.html">Project</a></li>
-        </ul>
-    </nav>
-    <div class="product">
-        <form action="product.html">
-            <input type="submit" value=">">
-        </form>
+    <div id="left-div">
+        <img src="logo-profile.png">
+        <br>
+        <h2>My Product</h2>
+        <button></button>
     </div>
-    <div class="project">
-        <form action="product.html">
-            <input type="submit" value=">">
-        </form>
+    <div id="right-div">
+        <img src="logo-profile.png">
+        <br>
+        <h2>My Project</h2>
+        <button></button>
     </div>
 </body>
-<style>
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    }
-
-    li {
-    float: left;
-    }
-
-    li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    }
-
-    li a:hover:not(.active) {
-    background-color: #111;
-    }
-
-    .active {
-    background-color: #04AA6D;
-    }
-    input {
-        border: none;
-        border-radius: 20px;
-        background-color: blue;
-        color: white;
-    }
-</style>
 </html>
