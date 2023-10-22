@@ -1,38 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
-    <link rel="icon" href="logo-profile.png ">
+    <title>Halaman Dua Div</title>
+    <style>
+        div {
+            background-color: cyan;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+        #left-div {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #right-div {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1, p {
+            color: #fff;
+        }
+        button {
+            background-color: #27ae60; /* Ganti warna tombol di sini */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="left">
-        <h1>Hi</h1>
+    <div id="left-div">
+        <img src="logo-profile.png" alt="Foto Anda">
     </div>
-    <div class="right">
+    <div id="right-div">
         <h1>Hello</h1>
-        <p>This is my testing website and yet still being developed</p>
-        <form action="home.html">
-            <input type="submit" value="Let's Explore">
-        </form>
+        <p>Ini adalah paragraf teks yang berisi informasi tentang Anda.</p>
+        <button>Klik Saya</button>
     </div>
 </body>
-<style>
-    body {
-        background-color: rgb(221, 221, 221);
-    }
-    .left {
-        margin: 50%;
-    }
-    .right {
-        margin: 50%;
-    }
-    input {
-        border: none;
-        border-radius: 20px;
-        background-color: blue;
-        color: white;
-    }
-</style>
 </html>
