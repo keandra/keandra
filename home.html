@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </nav>
+    <div class="product">
+        <form action="product.html">
+            <input type="submit" value=">">
+        </form>
+    </div>
+    <div class="project">
+        <form action="product.html">
+            <input type="submit" value=">">
+        </form>
+    </div>
+</body>
+<style>
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
+
+    li {
+    float: left;
+    }
+
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+    background-color: #111;
+    }
+
+    .active {
+    background-color: #04AA6D;
+    }
+    input {
+        border: none;
+        border-radius: 20px;
+        background-color: blue;
+        color: white;
+    }
+</style>
+</html>
